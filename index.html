@@ -23,6 +23,8 @@
       padding: 10px;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1s ease-in-out;
+      opacity: 0;
     }
     
     .employee img {
@@ -89,6 +91,18 @@
         border-radius: 0;
       }
     }
+    
+    /* Animation styles */
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 <body>
@@ -110,6 +124,15 @@
   <div class="company-logo">
     <img src="alterra_logo.jpg" alt="Alterra Logo">
   </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const employees = document.querySelectorAll('.employee');
+      employees.forEach((employee) => {
+        employee.style.opacity = 1;
+      });
+    });
+  </script>
 </body>
 </html>
 
