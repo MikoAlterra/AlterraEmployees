@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #B2A4FF;
+      color: #ffffff;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #ffffff;
+    }
+    
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #9376E0;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #ffffff;
+      margin-bottom: 20px;
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    
+    button[type="submit"] {
+      background-color: #9376E0;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: #7C5CBF;
+    }
+  </style>
+</head>
+<body>
+  <h1>Job Application</h1>
+  <form action="applications.html" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" required>
+    
+    <label for="birth-date">Birth Date:</label>
+    <input type="text" id="birth-date" name="birth-date" required>
+    
+    <label for="why-work-here">Why do you want to work here?</label>
+    <textarea id="why-work-here" name="why-work-here" required></textarea>
+    
+    <label for="what-can-you-do">What can you do?</label>
+    <textarea id="what-can-you-do" name="what-can-you-do" required></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
+

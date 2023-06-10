@@ -103,6 +103,27 @@
         transform: translateY(0);
       }
     }
+    
+    .apply-button {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+    }
+    
+    .apply-button button {
+      background-color: #9376E0;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .apply-button button:hover {
+      background-color: #7C5CBF;
+    }
   </style>
 </head>
 <body>
@@ -123,6 +144,10 @@
   </div>
   <div class="company-logo">
     <img src="alterra_logo.jpg" alt="Alterra Logo">
+  </div>
+
+  <div class="apply-button">
+    <button onclick="window.location.href='apply.html'">Send Application</button>
   </div>
 
   <script>
