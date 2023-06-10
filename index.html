@@ -40,6 +40,7 @@
       color: #ffffff;
       margin: 0;
       margin-bottom: 5px;
+      cursor: pointer;
     }
     
     p {
@@ -57,6 +58,37 @@
       height: 540px;
       border-radius: 5px;
     }
+    
+    /* Media Query for Mobile Devices */
+    @media only screen and (max-width: 600px) {
+      .employee {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .employee img {
+        width: 200px;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      
+      .employee-details {
+        margin: 0;
+      }
+      
+      .company-logo {
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      
+      .company-logo img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -64,14 +96,14 @@
   <div class="employee">
     <img src="miko.jpg" alt="Miko">
     <div class="employee-details">
-      <h2>Miko Arson</h2>
+      <h2 onclick="window.location.href='miko.html'">Miko Arson</h2>
       <p>Job Title: CEO</p>
     </div>
   </div>
   <div class="employee">
     <img src="levi.jpg" alt="Levi">
     <div class="employee-details">
-      <h2>Levi</h2>
+      <h2 onclick="window.location.href='levi.html'">Levi</h2>
       <p>Job Title: Professional Dumbass</p>
     </div>
   </div>
