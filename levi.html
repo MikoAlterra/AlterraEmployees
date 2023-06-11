@@ -1,8 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Miko Arson - Alterra Employee</title>
+  <title>Levi - Alterra Employee</title>
   <style>
+    /* CSS code for the button */
+    button {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      color: white;
+      background-color: #B2A4FF;
+      padding: 1em 2em;
+      border: none;
+      border-radius: .6rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 70%);
+      cursor: pointer;
+      overflow: hidden;
+      animation: fadeIn 1s ease-in-out;
+    }
+    
+    button span:not(:nth-child(6)) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 30px;
+      width: 30px;
+      background-color: #9376E0;
+      border-radius: 50%;
+      transition: .6s ease;
+    }
+    
+    button span:nth-child(6) {
+      position: relative;
+    }
+    
+    button span:nth-child(1) {
+      transform: translate(-3.3em, -4em);
+    }
+    
+    button span:nth-child(2) {
+      transform: translate(-6em, 1.3em);
+    }
+    
+    button span:nth-child(3) {
+      transform: translate(-.2em, 1.8em);
+    }
+    
+    button span:nth-child(4) {
+      transform: translate(3.5em, 1.4em);
+    }
+    
+    button span:nth-child(5) {
+      transform: translate(3.5em, -3.8em);
+    }
+    
+    button:hover span:not(:nth-child(6)) {
+      transform: translate(-50%, -50%) scale(4);
+      transition: 1.5s ease;
+    }
+    
+    /* Additional styling */
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
@@ -13,6 +73,7 @@
     h1 {
       text-align: center;
       color: #ffffff;
+      animation: fadeIn 1s ease-in-out;
     }
     
     .employee-details {
@@ -44,22 +105,6 @@
       margin: 0;
     }
     
-    .back-button {
-      text-align: center;
-      margin-top: 20px;
-      animation: fadeIn 1s ease-in-out;
-    }
-    
-    .back-button a {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #9376E0;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 5px;
-      animation: slideIn 1s ease-in-out;
-    }
-    
     @keyframes slideIn {
       0% {
         opacity: 0;
@@ -87,14 +132,19 @@
     <img src="levi.jpg" alt="Miko">
     <div>
       <h2>Levi</h2>
-      <p>Job Title: Professional Dumbass</p>
+      <p>Job Title: Professional Dumbass/p>
       <p>Work Compartment: Lab Compartment C1</p>
       <p>Worker ID: C440374A</p>
     </div>
   </div>
-  <div class="back-button">
-    <a href="index.html">Back to Employee List</a>
-  </div>
+  <button onclick="window.location.href='index.html'">
+    <span class="circle1"></span>
+    <span class="circle2"></span>
+    <span class="circle3"></span>
+    <span class="circle4"></span>
+    <span class="circle5"></span>
+    <span class="text">Back</span>
+  </button>
 </body>
 </html>
 
