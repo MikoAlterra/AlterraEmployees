@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Olivan - Alterra Employee</title>
+  <style>
+    /* CSS code for the button */
+    button {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      color: white;
+      background-color: #B2A4FF;
+      padding: 1em 2em;
+      border: none;
+      border-radius: .6rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 70%);
+      cursor: pointer;
+      overflow: hidden;
+      animation: fadeIn 1s ease-in-out;
+    }
+    
+    button span:not(:nth-child(6)) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 30px;
+      width: 30px;
+      background-color: #9376E0;
+      border-radius: 50%;
+      transition: .6s ease;
+    }
+    
+    button span:nth-child(6) {
+      position: relative;
+    }
+    
+    button span:nth-child(1) {
+      transform: translate(-3.3em, -4em);
+    }
+    
+    button span:nth-child(2) {
+      transform: translate(-6em, 1.3em);
+    }
+    
+    button span:nth-child(3) {
+      transform: translate(-.2em, 1.8em);
+    }
+    
+    button span:nth-child(4) {
+      transform: translate(3.5em, 1.4em);
+    }
+    
+    button span:nth-child(5) {
+      transform: translate(3.5em, -3.8em);
+    }
+    
+    button:hover span:not(:nth-child(6)) {
+      transform: translate(-50%, -50%) scale(4);
+      transition: 1.5s ease;
+    }
+    
+    /* Additional styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #B2A4FF;
+      color: #ffffff;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      animation: fadeIn 1s ease-in-out;
+    }
+    
+    .employee-details {
+      background-color: #9376E0;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      animation: slideIn 1s ease-in-out;
+    }
+    
+    .employee-details img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    
+    h2 {
+      color: #ffffff;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      color: #dddddd;
+      margin: 0;
+    }
+    
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Levi - Alterra Employee</h1>
+  <div class="employee-details">
+    <img src="Olivan.jpg" alt="Miko">
+    <div>
+      <h2>Levi</h2>
+      <p>Job Title: Document Maker</p>
+      <p>Work Compartment: Lab Compartment A4</p>
+      <p>Worker ID: A440374A</p>
+    </div>
+  </div>
+  <button onclick="window.location.href='index.html'">
+    <span class="circle1"></span>
+    <span class="circle2"></span>
+    <span class="circle3"></span>
+    <span class="circle4"></span>
+    <span class="circle5"></span>
+    <span class="text">Back</span>
+  </button>
+</body>
+</html>
+
