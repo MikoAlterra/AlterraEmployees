@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blue - Alterra Employee</title>
+  <title>Miko Arson - Alterra Employee</title>
   <style>
     /* CSS code for the button */
     button {
@@ -14,8 +14,8 @@
       border-radius: .6rem;
       position: absolute;
       left: 50%;
-      top: 50%;
-      transform: translate(-50%, 70%);
+      bottom: 30px;
+      transform: translateX(-50%);
       cursor: pointer;
       overflow: hidden;
       animation: fadeIn 1s ease-in-out;
@@ -65,20 +65,26 @@
     /* Additional styling */
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 0;
+      padding: 20px;
       background-color: #B2A4FF;
       color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     
     h1 {
       text-align: center;
       color: #ffffff;
       animation: fadeIn 1s ease-in-out;
+      font-size: 2.5em;
+      margin-bottom: 30px;
     }
     
     .employee-details {
       background-color: #9376E0;
-      padding: 20px;
+      padding: 40px;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       display: flex;
@@ -87,22 +93,36 @@
     }
     
     .employee-details img {
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      margin-right: 20px;
+      margin-right: 40px;
       animation: fadeIn 1s ease-in-out;
+    }
+    
+    .employee-details div {
+      display: flex;
+      flex-direction: column;
     }
     
     h2 {
       color: #ffffff;
       margin: 0;
       margin-bottom: 10px;
+      font-size: 1.8em;
     }
     
     p {
       color: #dddddd;
       margin: 0;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    
+    hr {
+      border: none;
+      border-top: 1px solid #ffffff;
+      margin: 15px 0;
     }
     
     @keyframes slideIn {
