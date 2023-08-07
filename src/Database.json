@@ -1,0 +1,32 @@
+{
+	"employees": {
+		"MAArson": {
+			"name": "Miko 'Alterra' Arson",
+			"pfp": "miko"
+		},
+		"Levi": {
+			"name": "Levi",
+			"pfp": "levi"
+		},
+		"Olivian": {
+			"name": "Olivian",
+			"pfp": "olivian"
+		},
+		"Scarlette": {
+			"name": "Scarlette",
+			"pfp": "scarlette"
+		},
+		"Blue": {
+			"name": "Blue",
+			"pfp": "blue"
+		},
+		"JPop": {
+			"name": "Juniper Pop",
+			"pfp": "juni"
+		},
+		"Syntax": {
+			"name": "Syntax",
+			"pfp": "syntax"
+		}
+	}
+}
