@@ -2,30 +2,37 @@
 	"employees": {
 		"MAArson": {
 			"name": "Miko 'Alterra' Arson",
+			"jobTitle": "CEO",
 			"pfp": "miko"
 		},
 		"Levi": {
 			"name": "Levi",
+			"jobTitle": "Hardware Testing",
 			"pfp": "levi"
 		},
-		"Olivian": {
-			"name": "Olivian",
-			"pfp": "olivian"
+		"Olivan": {
+			"name": "Olivan",
+			"jobTitle": "Document Specialist",
+			"pfp": "olivan"
 		},
 		"Scarlette": {
 			"name": "Scarlette",
+			"jobTitle": "Head Engineer",
 			"pfp": "scarlette"
 		},
 		"Blue": {
 			"name": "Blue",
+			"jobTitle": "Advertising",
 			"pfp": "blue"
 		},
 		"JPop": {
 			"name": "Juniper Pop",
+			"jobTitle": "Advertising",
 			"pfp": "juni"
 		},
 		"Syntax": {
 			"name": "Syntax",
+			"jobTitle": "Developer",
 			"pfp": "syntax"
 		}
 	}
