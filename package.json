@@ -1,0 +1,25 @@
+{
+	"name": "alterra-employees",
+	"version": "1.0.0",
+	"private": true,
+	"dependencies": {
+		"@types/react-router": "^5.1.20",
+		"@vitejs/plugin-react": "^4.0.4",
+		"axios": "^1.4.0",
+		"cors": "^2.8.5",
+		"firebase": "^8.6.8",
+		"query-string": "^8.1.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.11.1"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@types/react-dom": "^18.2.7",
+		"vite": "^4.4.8"
+	}
+}
