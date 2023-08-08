@@ -24,7 +24,7 @@ function List() {
 				<img src={`/src/assets/pfp/${employee.pfp}.jpg`} />
 				<div className="employee-details">
 					<h2>
-						<a href={`/employees/${key}`}>{employee.name}</a>
+						<a href={`/employee/?id=${key}`}>{employee.name}</a>
 					</h2>
 					<p>Job Title: {employee.jobTitle}</p>
 				</div>

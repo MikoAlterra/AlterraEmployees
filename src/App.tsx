@@ -1,12 +1,12 @@
 // import cmp from './components/cmp';
-import List from './components/List';
+import Router from './components/Router';
 
 function App() {
 	console.clear(); // Used to remove 3rd party extension errors.
 	return (
 		<div className="App">
 			{/* <cmp /> */}
-			<List />
+			<Router />
 		</div>
 	);
 }
